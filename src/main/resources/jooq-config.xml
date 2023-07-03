@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration xmlns="http://www.jooq.org/xsd/jooq-meta-3.16.0.xsd">
+    <jdbc>
+        <driver>org.postgresql.Driver</driver>
+        <url>jdbc:postgresql://localhost:5432/practicedbreactive</url>
+        <user>postgres</user>
+        <password>user</password>
+    </jdbc>
+    <generator>
+        <database>
+            <name>org.jooq.meta.postgres.PostgresDatabase</name>
+            <includes>.*</includes>
+            <inputSchema>PUBLIC</inputSchema>
+        </database>
+        <target>
+            <packageName>rondos.xdev.practicetaskreactive.repository</packageName>
+            <directory>src/main/java</directory>
+        </target>
+    </generator>
+</configuration>
